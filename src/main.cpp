@@ -9,6 +9,6 @@ int main() {
         ball.updatePosition();
         std::cout << "Time: " << i << " X: " << ball.x << " Y: " << ball.y << std::endl; 
     }
-
+    
     return 0;
 }
