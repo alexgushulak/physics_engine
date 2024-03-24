@@ -1,3 +1,5 @@
 asm
 src/*.out
 .DS_Store
+build
+bin

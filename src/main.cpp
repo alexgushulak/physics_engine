@@ -1,13 +1,21 @@
+#include "node.h"
 #include <iostream>
-#include "ball.h"
-
 
 int main() {
-    Ball ball;
+    const int HEIGHT = 5;
+    const int WIDTH = 5;
+    Node nodeMatrix[HEIGHT][WIDTH];
+    
+    for (int i=0; i<HEIGHT; i++) {
+        for (int j=0; j<WIDTH; j++) {
+            nodeMatrix[i][j] = Node(i, j);
+        }
+    }
 
-    for (int i = 0; i < 50; i++) {
-        ball.updatePosition();
-        std::cout << "Time: " << i << " X: " << ball.x << " Y: " << ball.y << std::endl; 
+    for (int i=0; i<HEIGHT; i++) {
+        for (int j=0; j<WIDTH; j++) {
+            std::cout << "Node at (" << i << ", " << j << ") has center_x_pos: " << nodeMatrix[i][j].center_x_pos << " and center_y_pos: " << nodeMatrix[i][j].center_y_pos << std::endl;
+        }
     }
     
     return 0;
