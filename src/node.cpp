@@ -10,6 +10,8 @@ Node::Node(double center_x_pos, double center_y_pos) {
     this->center_y_pos = center_y_pos;
 }
 
+int Node::staticVariable = 0;
+
 double Node::get_pressure() {
     return pressure;
 }

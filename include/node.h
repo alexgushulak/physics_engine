@@ -3,6 +3,7 @@
 
 class Node {
 public:
+    static int staticVariable;
     Node();
     Node(double center_x_pos, double center_y_pos);
     double center_x_pos;
